@@ -1,0 +1,119 @@
+body{
+	padding: 0 0 0 10%;
+	margin-top: 0;
+}
+.conteiner{
+	width: 1200px;
+	height: 700px;
+	background-image: url(../img/1620240124_10-phonoteka_org-p-fon-dlya-teksta-v-instagrame-temnii-13.jpg);
+	background-repeat: no-repeat;
+}
+.header{
+	width: 1160px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	background-color: #022b3dc4;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+}
+.timer{
+	width: 200px;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+}
+.task{
+	width: 650px;
+	height: 80px;
+	font-size: 26px;
+	text-align: center;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+.score{
+	width: 200px;
+	height: 80px;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.display{
+	width: 1160px;
+	height: 420px;
+	padding: 0 20px 0 20px;
+	display: grid;
+  grid-template-columns: repeat(11, 1fr);
+}
+.display button img{
+   width: 80px;
+	height: 80px;
+}
+.display button{
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+.display button:hover{
+	background-color: #6274e6a0;
+	border-radius: 15px;
+}
+.result{
+	width: 1160px;
+	height: 180px;
+	background-color: #022b3dc4;
+	display: grid;
+	grid-template-columns: repeat(17, 1fr);
+	padding: 0 20px 0 20px;
+	align-items: center;
+}
+.result div img{
+   width: 50px;
+	height: 50px;
+}
+.win{
+	width: 500px;
+	height: 180px;
+	background-color: #06334fc4;
+	padding: 15px;
+	position: absolute;
+	top: 150px;
+	left: 500px;
+	text-align: center;
+	border-radius: 10px;
+	visibility: hidden;
+}
+.win h1{
+	color: #fff;
+	font-size: 25px;
+}
+.win button{
+	width: 150px;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	border: #8fcbe9c4;
+	background-color: rgba(255, 255, 255, 0.789);
+	-webkit-box-shadow: -1px 1px 1px 3px rgba(195, 241, 255, 0.2);
+-moz-box-shadow: -1px 1px 1px 3px rgba(195, 241, 255, 0.2);
+box-shadow: -1px 1px 1px 3px rgba(195, 241, 255, 0.2);
+}
+.win button::before{
+	content: attr(text);
+}
+.win button:hover:before{
+	content: attr(hover-text);
+}
+.win button:hover{
+	background-color: #1985d3c4;
+	color: #fff;
+	-webkit-box-shadow: -1px 1px 1px 3px rgba(206, 244, 255, 0.2);
+-moz-box-shadow: -1px 1px 1px 3px rgba(206, 244, 255, 0.2);
+box-shadow: -1px 1px 1px 3px rgba(206, 244, 255, 0.2);
+}

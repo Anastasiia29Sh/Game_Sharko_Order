@@ -1,0 +1,126 @@
+body{
+	padding: 0 0 0 10%;
+	margin-top: 0;
+}
+.conteiner{
+	width: 1200px;
+	height: 700px;
+	background-image: url(../img/65e4cbaa0c77648957967e23c6e97930.jpg);
+	background-repeat: no-repeat;
+}
+.header{
+	width: 1160px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	background-color: #035a63c4;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+}
+.timer{
+	width: 200px;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+}
+.task{
+	width: 650px;
+	height: 80px;
+	font-size: 26px;
+	text-align: center;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+.score{
+	width: 200px;
+	height: 80px;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.display{
+	width: 1160px;
+	height: 440px;
+	padding: 0 20px 0 20px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+.display button{
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+.display button img{
+	width: 50%;
+}
+.display button:hover{
+	background-color: #45ee53c4;
+}
+.display button:hover::after{
+	background-color: #45ee53c4;
+	content: attr(data-title);
+	z-index: 1;
+}
+.result{
+	width: 1160px;
+	height: 160px;
+	background-color: #035a63c4;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px 0 20px;
+}
+.result div{
+/* border: 2px dashed #f084a8c4; */
+width: 300px;
+height: 150px;
+margin-right: 3px;
+margin-top: 20px;
+}
+.win{
+	width: 500px;
+	height: 180px;
+	background-color: #177f96b1;
+	padding: 15px;
+	position: absolute;
+	top: 150px;
+	left: 500px;
+	text-align: center;
+	border-radius: 10px;
+	visibility: hidden;
+}
+.win h1{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+}
+.win button{
+	width: 150px;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	border: #011f27b1;
+	background-color: rgba(255, 255, 255, 0.734);
+	-webkit-box-shadow: -1px 1px 1px 0px rgba(77, 255, 92, 0.564);
+-moz-box-shadow: -1px 1px 1px 0px rgba(57, 255, 74, 0.2);
+box-shadow: -1px 1px 1px 0px rgba(57, 255, 74, 0.2);
+}
+.win button::before{
+	content: attr(text);
+}
+.win button:hover:before{
+	content: attr(hover-text);
+}
+.win button:hover{
+	background-color: #084965d4;
+	color: #fff;
+	-webkit-box-shadow: -1px 1px 1px 0px rgba(77, 253, 92, 0.585);
+-moz-box-shadow: -1px 1px 1px 0px rgba(57, 255, 74, 0.2);
+box-shadow: -1px 1px 1px 0px rgba(57, 255, 74, 0.2);
+}

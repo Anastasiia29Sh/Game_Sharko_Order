@@ -1,0 +1,118 @@
+body{
+	padding: 0 0 0 10%;
+	margin-top: 0;
+}
+.conteiner{
+	width: 1200px;
+	height: 700px;
+	background-color: #000;
+	background-image: url(../img/C6pQiIjWwAI66ZZ.jpg);
+	background-repeat: no-repeat;
+}
+.header{
+	width: 1160px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	background-color: #c62d60c4;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+}
+.timer{
+	width: 200px;
+	height: 80px;
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	align-items: center;
+	justify-content: center;
+}
+.task{
+	width: 650px;
+	height: 80px;
+	font-size: 26px;
+	text-align: center;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+.score{
+	width: 200px;
+	height: 80px;
+	font-size: 20px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+.display{
+	width: 1160px;
+	height: 420px;
+	padding: 0 20px 0 20px;
+}
+.display button{
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	position: relative;
+}
+.display button:hover{
+	background-color: #f1739dc4;
+	border-radius: 20px;
+}
+.result{
+	width: 1160px;
+	height: 180px;
+	background-color: #e95c8baa;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px 0 20px;
+}
+.result div{
+/* border: 2px dashed #f084a8c4; */
+width: 300px;
+height: 150px;
+margin-right: 3px;
+}
+.win{
+	width: 500px;
+	height: 180px;
+	background-color: #c62d60b1;
+	padding: 15px;
+	position: absolute;
+	top: 150px;
+	left: 500px;
+	text-align: center;
+	border-radius: 10px;
+	visibility: hidden;
+}
+.win h1{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+}
+.win button{
+	width: 150px;
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 18px;
+	border: #ba194fb1;
+	background-color: rgba(255, 255, 255, 0.734);
+	-webkit-box-shadow: -1px 1px 1px 3px rgba(232, 2, 144, 0.2);
+-moz-box-shadow: -1px 1px 1px 3px rgba(232, 2, 144, 0.2);
+box-shadow: -1px 1px 1px 3px rgba(232, 2, 144, 0.2);
+}
+.win button::before{
+	content: attr(text);
+}
+.win button:hover:before{
+	content: attr(hover-text);
+}
+.win button:hover{
+	background-color: #e92365d4;
+	color: #fff;
+	-webkit-box-shadow: -1px 1px 1px 3px rgba(255, 221, 247, 0.2);
+-moz-box-shadow: -1px 1px 1px 3px rgba(255, 221, 247, 0.2);
+box-shadow: -1px 1px 1px 3px rgba(255, 221, 247, 0.2);
+}
