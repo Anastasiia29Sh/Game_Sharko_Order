@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/level_2_digits.css">
+	<title>level_2</title>
+</head>
+
+<body>
+	<div class="conteiner">
+		<div class="header">
+			<!-- Таймер -->
+			<div class="timer">
+				<p id="minutes" style="margin-right: 10px; border: 1px solid #fff; padding: 5px;">00</p>
+				<p style="margin-right: 10px;">:</p>
+				<p id="seconds" style="border: 1px solid #fff; padding: 5px;">00</p>
+			</div>
+			<!-- Текст задания -->
+			<div class="task">
+				<p>Уровень 2. Выстроить цифры в порядке возрастания от 0 до 10 (по нажатию)</p>
+			</div>
+			<!-- Баллы -->
+			<div class="score">
+				<p id="nname"></p>
+				<p id="res_marks"></p>
+			</div>
+		</div>
+		<!-- Экран с цифрами -->
+		<div class="display">
+			<button id="num0" onclick="number0()"><img id="img0" src="../img/img12.png" alt=""></button>
+			<button id="num1" onclick="number1()"><img id="img1" src="../img/img1.png" alt=""></button>
+			<button id="num2" onclick="number2()"><img id="img2" src="../img/img2.png" alt=""></button>
+			<button id="num3" onclick="number3()"><img id="img3" src="../img/img3.png" alt=""></button>
+			<button id="num4" onclick="number4()"><img id="img4" src="../img/img4.png" alt=""></button>
+			<button id="num5" onclick="number5()"><img id="img5" src="../img/img5.png" alt=""></button>
+			<button id="num6" onclick="number6()"><img id="img6" src="../img/img6.png" alt=""></button>
+			<button id="num7" onclick="number7()"><img id="img7" src="../img/img7.png" alt=""></button>
+			<button id="num8" onclick="number8()"><img id="img8" src="../img/img8.png" alt=""></button>
+			<button id="num9" onclick="number9()"><img id="img9" src="../img/img9.png" alt=""></button>
+			<button id="num10" onclick="number10()" style="width: 190px; height: 190px;"><img id="img10"
+					src="../img/img11.png" alt=""></button>
+		</div>
+		<!-- Результат -->
+		<div class="result">
+			<div id="n0"><img id="u0" src="" alt=""></div>
+			<div id="n1"><img id="u1" src="" alt=""></div>
+			<div id="n2"><img id="u2" src="" alt=""></div>
+			<div id="n3"><img id="u3" src="" alt=""></div>
+			<div id="n4"><img id="u4" src="" alt=""></div>
+			<div id="n5"><img id="u5" src="" alt=""></div>
+			<div id="n6"><img id="u6" src="" alt=""></div>
+			<div id="n7"><img id="u7" src="" alt=""></div>
+			<div id="n8"><img id="u8" src="" alt=""></div>
+			<div id="n9"><img id="u9" src="" alt=""></div>
+			<div id="n10" style="margin-right: 0;"><img id="u10" src="" alt=""></div>
+		</div>
+
+		<p class="author" style="margin-left: 0; font-size: 10px;">© 2021 Шарко А.Э.</p>
+
+		<div class="win" id="win_good" style="border: 2px solid rgb(60, 255, 0);">
+			<h1>Поздравляю! Вы все выполнили правильно.</h1>
+			<p id="mark_good" style="font-size: 20px;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button id="level3" text="Уровень 3" hover-text="Фигуры"
+					onclick="window.location.href = '../html/level_3_figures.html'"></button>
+			</div>
+		</div>
+
+		<div class="win" id="win_bed" style="border: 2px solid rgb(255, 8, 0);">
+			<h1>Вы проиграли!</h1>
+			<p id="mark_bed" style="font-size: 20px;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button onclick="window.location.href = 'level_2_digits.html'">Ещё раз</button>
+			</div>
+		</div>
+
+		<div class="win" id="win_exit">
+			<h1 id="num_level"></h1>
+			<h1 id="all_ball" style="font-size: 20px; color: #fff;"></h1>
+			<div class="buttons">
+				<button onclick="window.location.href = '../index.html'" style="margin-top: 20px;">Ок</button>
+			</div>
+		</div>
+
+		<script src="../js/level_2_digits.js"></script>
+
+	</div>
+
+</body>
+
+</html>
