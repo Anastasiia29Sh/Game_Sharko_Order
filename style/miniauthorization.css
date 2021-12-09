@@ -1,0 +1,142 @@
+
+body{
+	padding: 0;
+	margin-top: -47px;
+}
+.dark{
+	display: block;
+	margin-left: 177px;
+	width: 140px;
+	height: 40px;
+	margin-top: 50px;
+	list-style: none;
+	font-size: 18px;
+	background-color: #ffffff00;
+	border-radius: 10px;
+	color: rgb(0, 0, 0);
+	padding: 5px;
+	border: none;
+	border: 1px solid rgba(238, 163, 24, 0.748);
+}
+.light:hover, .dark:hover{
+	-webkit-box-shadow: 8px 8px 5px -5px rgba(219, 93, 4, 0.6) inset;
+-moz-box-shadow: 8px 8px 5px -5px rgba(219, 93, 4, 0.6) inset;
+box-shadow: 8px 8px 5px -5px rgba(219, 93, 4, 0.6) inset;
+}
+.conteiner{
+	/* width: 1200px;
+	height: 700px; */
+	width: 1100px;
+	height: 690px;
+	background-image: url(../img/1625500700_12-kartinkin-com-p-fon-matematicheskii-dlya-doshkolnikov-kras-13.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.name_game{
+	font-size: 70px;
+	font-weight: bolder;
+	color: rgb(231, 104, 1);
+   text-shadow: 4px 4px 0px #efeded, 6px 6px 0px #f66d52;
+	text-align: center;
+	padding-top: 130px;
+	letter-spacing: 7px;	
+}
+.input{
+	width: 500px;
+	text-align: center;
+	/* margin-left: 350px; */
+	margin-left: 25%;
+	margin-top: 45px;
+	font-size: 25px;
+	font-style: italic;
+}
+.input input{
+	width: 300px;
+	height: 35px;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	border: 1px solid #f3a07a;
+	font-size: 20px;
+	-webkit-box-shadow: 5px 5px 5px -5px rgba(219, 93, 4, 0.6) inset;
+-moz-box-shadow: 5px 5px 5px -5px rgba(219, 93, 4, 0.6) inset;
+box-shadow: 5px 5px 5px -5px rgba(219, 93, 4, 0.6) inset;
+}
+.mistake{
+	font-size: 17px;
+	color: red;
+	font-style: normal;
+	margin-top: 7px;
+	visibility: hidden;
+}
+.start{
+	width: 160px;
+	height: 60px;
+	margin-top: 25px;
+	list-style: none;
+	font-size: 23px;
+	background-color: #f55a3b;
+	border-radius: 30px 10px 30px 10px;
+	color: #fff;
+	padding: 7px;
+	border: none;
+	-webkit-box-shadow: 15px 16px 13px -6px rgba(219, 93, 4, 0.62);
+	-moz-box-shadow: 15px 16px 13px -6px rgba(219, 93, 4, 0.62);
+	box-shadow: 15px 16px 13px -6px rgba(219, 93, 4, 0.62);
+}
+.start:hover{
+box-shadow: -11px 9px 58px 10px rgba(249, 171, 77, 0.62);
+background-color: #fab55b;
+color: #b66202;
+}
+.steps{
+	position: absolute;
+	width: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20%;
+	margin-top: -320px;
+	visibility: hidden;
+}
+.steps button{
+	width: 250px;
+	height: 45px;
+	margin-bottom: 15px;
+	border-radius: 20px;
+	font-size: 20px;
+	border: #f66d52;
+	background-color: rgba(255, 255, 255, 0.459);
+	-webkit-box-shadow: -1px 1px 1px 3px rgba(255, 149, 42, 0.2);
+	-moz-box-shadow: -1px 1px 1px 3px rgba(255, 149, 42, 0.2); 
+	box-shadow: -1px 1px 1px 3px rgba(255, 149, 42, 0.2);
+}
+.steps button::before{
+	content: attr(text);
+}
+.steps button:hover:before{
+	content: attr(hover-text);
+}
+.steps button:hover{
+	background-color: rgb(231, 141, 67);
+	color: #fff;
+	-webkit-box-shadow: -1px 1px 5px 5px rgba(255, 244, 74, 0.2);
+	-moz-box-shadow: -1px 1px 5px 5px rgba(255, 244, 74, 0.2);
+	box-shadow: -1px 1px 5px 5px rgba(255, 244, 74, 0.2);
+}
+.steps .back{
+	width: 100px;
+	height: 30px;
+	margin-top: 25px;
+	border-radius: 5px;
+	font-size: 18px;
+	border: 1px solid #f8ba96;
+	background-color: rgba(255, 255, 255, 0.459);
+	box-shadow: none;
+}
+.steps .back:hover{
+	background-color: #f89a63;
+	color: #fff;
+	box-shadow: none;
+}
