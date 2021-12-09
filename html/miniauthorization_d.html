@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/miniauthorization_d.css">
+
+	<title>Game</title>
+</head>
+
+<body>
+	<div class="conteiner">
+		<h1 class="name_game">ПО ПОРЯДКУ</h1>
+		<!-- Авторизация -->
+		<div id="input" class="input">
+			<p>Введите Ваше имя</p>
+			<input type="text" id="name" onchange="localStorage.setItem('input', this.value);">
+			<div class="mistake" id="mist">Пожалуйста, введите Ваше имя!</div>
+			<!-- <br> -->
+			<button class="start" onclick="start()">Начать игру</button>
+
+			<button class="light" onclick="window.location.href = '../index.html'">Светлая
+				тема</button>
+		</div>
+
+		<!-- Уровни игры -->
+		<div id="steps" class="steps">
+			<button id="level1" text="Уровень 1" hover-text="Размер"
+				onclick="window.location.href = '../html/level_1_size_d.html'" disabled="true"></button>
+			<button id="level2" text="Уровень 2" hover-text="Цифры"
+				onclick="window.location.href = '../html/level_2_digits_d.html'" disabled="true"></button>
+			<button id="level3" text="Уровень 3" hover-text="Фигуры"
+				onclick="window.location.href = '../html/level_3_figures_d.html'" disabled="true"></button>
+			<button id="level4" text="Уровень 4" hover-text="Буквы"
+				onclick="window.location.href = '../html/level_4_books_d.html'" disabled="true"></button>
+			<button id="level5" text="Уровень 5" hover-text="Картинки"
+				onclick="window.location.href = '../html/level_5_charts_d.html'" disabled="true"></button>
+
+			<button class="back" onclick="window.location.href = 'miniauthorization_d.html'">Назад</button>
+		</div>
+
+	</div>
+
+	<p class="author" style="margin-left: 0; font-size: 10px;">© 2021 Шарко А.Э.</p>
+
+	<script src="../js/miniauthorization.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/level_5_charts.css">
+	<title>level_5</title>
+</head>
+
+<body>
+	<div class="conteiner">
+		<div class="header">
+			<!-- Таймер -->
+			<div class="timer">
+				<p id="minutes" style="margin-right: 10px; border: 1px solid #fff; padding: 5px;">00</p>
+				<p style="margin-right: 10px;">:</p>
+				<p id="seconds" style="border: 1px solid #fff; padding: 5px;">00</p>
+			</div>
+			<!-- Текст задания -->
+			<div class="task">
+				<p>Уровень 5. Найдите ягоды и расставьте в алфавитном порядке по первым буквам их названий (по нажатию)
+				</p>
+			</div>
+			<!-- Баллы -->
+			<div class="score">
+				<p id="nname"></p>
+				<p id="res_marks"></p>
+			</div>
+		</div>
+		<button class="still" onclick="window.location.href = 'level_5_charts.html'">Начать сначала</button>
+		<!-- Экран-->
+		<div class="display">
+			<button id="pic0" data-title="Голубика" onclick="picture0()"><img id="img0" src="../img/imgg1.png"
+					alt=""></button>
+			<button id="pic1" onclick="picture1()" data-title="Крыжовник"><img id="img1" src="../img/imgg8.png"
+					alt=""></button>
+			<button id="pic2" onclick="picture2()" data-title="Лимон"><img id="img2" src="../img/imgg15.png"
+					alt=""></button>
+			<button id="pic4" onclick="picture4()" data-title="Ананас"><img id="img4" src="../img/imgg12.png"
+					alt=""></button>
+			<button id="pic3" onclick="picture3()" data-title="Клубника"><img id="img3" src="../img/imgg4.png"
+					alt=""></button>
+			<button id="pic5" onclick="picture5()" data-title="Облепиха"><img id="img5" src="../img/imgg5.png"
+					alt=""></button>
+			<button id="pic6" onclick="picture6()" data-title="Вишня"><img id="img6" src="../img/imgg3.png"
+					alt=""></button>
+			<button id="pic7" onclick="picture7()" data-title="Яблоко"><img id="img7" src="../img/imgg9.png"
+					alt=""></button>
+			<button id="pic8" onclick="picture8()" data-title="Киви"><img id="img8" src="../img/imgg14.png"
+					alt=""></button>
+			<button id="pic9" onclick="picture9()" data-title="Грейпфрукт"><img id="img9" src="../img/imgg10.png"
+					alt=""></button>
+			<button id="pic10" onclick="picture10()" data-title="Шиповник"><img id="img10" src="../img/imgg7.png"
+					alt=""></button>
+			<button id="pic11" onclick="picture11()" data-title="Шелковица"><img id="img11" src="../img/imgg6.png"
+					alt=""></button>
+			<button id="pic12" onclick="picture12()" data-title="Апельсин"><img id="img12" src="../img/imgg11.png"
+					alt=""></button>
+			<button id="pic13" onclick="picture13()" data-title="Малина"><img id="img13" src="../img/imgg2.png"
+					alt=""></button>
+			<button id="pic14" onclick="picture14()" data-title="Банан"><img id="img14" src="../img/imgg13.png"
+					alt=""></button>
+
+		</div>
+		<!-- Результат -->
+
+		<div class="result">
+			<div id="n0"><img id="u0" src="" alt=""></div>
+			<div id="n1"><img id="u1" src="" alt=""></div>
+			<div id="n2"><img id="u2" src="" alt=""></div>
+			<div id="n3"><img id="u3" src="" alt=""></div>
+			<div id="n4"><img id="u4" src="" alt=""></div>
+			<div id="n5"><img id="u5" src="" alt=""></div>
+			<div id="n6"><img id="u6" src="" alt=""></div>
+			<div id="n7" style="margin-right: 0;"><img id="u7" src="" alt="">
+			</div>
+		</div>
+		<p class="author" style="margin-left: 0; font-size: 10px;">© 2021 Шарко А.Э.</p>
+
+		<div class="win" id="win_good" style="border: 2px solid rgb(60, 255, 0); height: 300px;;">
+			<h1>Поздравляю! Вы все выполнили правильно.</h1>
+			<p id="mark_good" style="font-size: 20px; color: #fff;"></p>
+			<h1 style="font-size: 20px; color: rgb(245, 255, 59);">Игра окончена!</h1>
+			<p style="font-size: 18px; color: rgb(245, 255, 59);">Вы успешно прошли все 5 уровней!</p>
+			<p id="all_res" style="font-size: 20px; color: rgb(245, 255, 59);">Ваш результат: </p>
+			<div class="buttons">
+				<button onclick="window.location.href = '../index.html'" style="margin-right: 20px;">Выход</button>
+			</div>
+		</div>
+
+		<div class="win" id="win_bed" style="border: 2px solid rgb(255, 8, 0);">
+			<h1>Вы проиграли!</h1>
+			<p id="mark_bed" style="font-size: 20px; color: #fff;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button onclick="window.location.href = 'level_5_charts.html'">Ещё раз</button>
+			</div>
+		</div>
+
+		<div class="win" id="win_exit">
+			<h1 id="num_level"></h1>
+			<h1 id="all_ball" style="font-size: 20px; color: #fff;"></h1>
+			<div class="buttons">
+				<button onclick="window.location.href = '../index.html'" style="margin-top: 20px;">Ок</button>
+			</div>
+		</div>
+
+		<script src="../js/level_5_charts.js"></script>
+
+	</div>
+
+</body>
+
+</html>

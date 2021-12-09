@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/level_1_size_d.css">
+	<title>level_1</title>
+</head>
+
+<body>
+	<div class="conteiner">
+		<div class="header">
+			<!-- Таймер -->
+			<div class="timer">
+				<p id="minutes" style="margin-right: 10px; border: 1px solid #fff; padding: 5px;">00</p>
+				<p style="margin-right: 10px;">:</p>
+				<p id="seconds" style="border: 1px solid #fff; padding: 5px;">00</p>
+			</div>
+			<!-- Текст задания -->
+			<div class="task">
+				<p>Уровень 1. Разместите кексики в порядке увеличения их размера (по нажатию)</p>
+			</div>
+			<!-- Баллы -->
+			<div class="score">
+				<p id="nname"></p>
+				<p id="res_marks"></p>
+			</div>
+		</div>
+		<button class="still" onclick="window.location.href = 'level_1_size_d.html'">Начать сначала</button>
+		<!-- Экран с кексами -->
+		<div class="display">
+			<button id="cupc0" onclick="cupcake0()" style="top: 20px;"><img id="img0" src="../img/image 36.png" alt=""
+					style="width: 200px;"></button>
+			<button id="cupc1" onclick="cupcake1()" style="top: -150px; left: -50px;"><img id="img1"
+					src="../img/s1200 1.png" alt="" style="width: 213px;"></button>
+			<button id="cupc2" onclick="cupcake2()" style="top: -10px; left: -150px;"><img id="img2"
+					src="../img/image 1.png" alt="" style="width: 100px"></button>
+			<button id="cupc3" onclick="cupcake3()" style="top: -90px; left: -140px;"><img id="img3"
+					src="../img/png-clipart-chocolate-cupcake-with-strawberry-icing-illustration-ice-cream-sundae-cupcake-muffin-chocolate-cake-chocolate-muffin-with-strawberry-cream-food 1.png"
+					alt="" style="width: 200px;"></button>
+			<button id="cupc4" onclick="cupcake4()" style=" left: -150px; "><img id="img4" src="../img/image 2.png" alt=""
+					style="width: 130px;"></button>
+			<button id="cupc5" onclick="cupcake5()" style="top: -160px; left: -220px;"><img id="img5"
+					src="../img/png-clipart-cupcake-with-toppings-illustration-ice-cream-cupcakes-baking-kitchen-cheese-cake-maker-torte-ice-cream-cream-food 1.png"
+					alt="" style="width: 125px;"></button>
+			<button id="cupc6" onclick="cupcake6()" style="left: 830px; top: -210px;"><img id="img6"
+					src="../img/png-transparent-cupcake-illustration-cupcake-icing-birthday-cake-muffin-delicious-cupcakes-cream-food-painted 1.png"
+					alt="" style="width: 210px;"></button>
+		</div>
+		<!-- Результат -->
+		<div class="result">
+			<div id="n0"><img id="u0" src="" alt=""></div>
+			<div id="n1"><img id="u1" src="" alt=""></div>
+			<div id="n2"><img id="u2" src="" alt=""></div>
+			<div id="n3"><img id="u3" src="" alt=""></div>
+			<div id="n4"><img id="u4" src="" alt=""></div>
+			<div id="n5"><img id="u5" src="" alt=""></div>
+			<div id="n6" style="margin-right: 0;"><img id="u6" src="" alt="">
+			</div>
+		</div>
+
+		<p class="author" style="margin-left: 0; font-size: 10px;">© 2021 Шарко А.Э.</p>
+
+		<div class="win" id="win_good" style="border: 2px solid rgb(60, 255, 0);">
+			<h1>Поздравляю! Вы все выполнили правильно.</h1>
+			<p id="mark_good" style="font-size: 20px; color: #fff;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button text="Уровень 2" hover-text="Цифры"
+					onclick="window.location.href = '../html/level_2_digits_d.html'"></button>
+			</div>
+		</div>
+
+		<div class="win" id="win_bed" style="border: 2px solid rgb(255, 8, 0);">
+			<h1>Вы проиграли!</h1>
+			<p id="mark_bed" style="font-size: 20px; color: #fff;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button onclick="window.location.href = 'level_1_size_d.html'">Ещё раз</button>
+			</div>
+		</div>
+
+		<div class="win" id="win_exit">
+			<h1 id="num_level"></h1>
+			<h1 id="all_ball" style="font-size: 20px; color: #fff;"></h1>
+			<div class="buttons">
+				<button onclick="window.location.href = '../html/miniauthorization_d.html'"
+					style="margin-top: 20px;">Ок</button>
+			</div>
+		</div>
+
+		<script src="../js/level_1_size.js"></script>
+
+	</div>
+
+</body>
+
+</html>
