@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../style/level_3_figures_d.css">
+	<title>level_3</title>
+</head>
+
+<body>
+	<div class="conteiner">
+		<div class="header">
+			<!-- Таймер -->
+			<div class="timer">
+				<p id="minutes" style="margin-right: 10px; border: 1px solid #fff; padding: 5px;">00</p>
+				<p style="margin-right: 10px;">:</p>
+				<p id="seconds" style="border: 1px solid #fff; padding: 5px;">00</p>
+			</div>
+			<!-- Текст задания -->
+			<div class="task">
+				<p>Уровень 3. Выстроить фигуры в порядке увеличения количества их углов (перетягивание элементов)</p>
+			</div>
+			<!-- Баллы -->
+			<div class="score">
+				<p id="nname"></p>
+				<p id="res_marks"></p>
+			</div>
+		</div>
+		<button class="still" onclick="window.location.href = 'level_3_figures_d.html'">Начать сначала</button>
+		<!-- Экран с фигурами -->
+		<div class="display">
+			<div id="fig0"><img id="img0" src="../img/image 39.png" alt="" draggable="true"></div>
+			<div id="fig1"><img id="img1" src="../img/image 44.png" alt="" draggable="true"></div>
+			<div id="fig2"><img id="img2" src="../img/imgonline-com-ua-Transparent-backgr-wFtrQE1p9Gvwnm3.png" alt=""
+					draggable="true"></div>
+			<div id="fig3"><img id="img3" src="../img/image 37.png" alt="" draggable="true"></div>
+			<div id="fig4" draggable="true"><img id="img4" src="../img/image 41.png" alt=""></div>
+			<div id="fig5" draggable="true"><img id="img5" src="../img/imgonline-com-ua-Transparent-backgr-nW7180KvM1r.png"
+					alt=""></div>
+			<div id="fig6" draggable="true"><img id="img6" src="../img/image 38.png" alt=""></div>
+			<div id="fig7" draggable="true"><img id="img7" src="../img/image 42.png" alt=""></div>
+			<div id="fig8" draggable="true"><img id="img8"
+					src="../img/imgonline-com-ua-Transparent-backgr-fX2yESloaCnSH.png" alt=""></div>
+		</div>
+		<!-- Результат -->
+		<div class="result">
+			<div id="n0"><img id="u0" src="" alt=""></div>
+			<div id="n1"><img id="u1" src="" alt=""></div>
+			<div id="n2"><img id="u2" src="" alt=""></div>
+			<div id="n3"><img id="u3" src="" alt=""></div>
+			<div id="n4"><img id="u4" src="" alt=""></div>
+			<div id="n5"><img id="u5" src="" alt=""></div>
+			<div id="n6"><img id="u6" src="" alt=""></div>
+			<div id="n7"><img id="u7" src="" alt=""></div>
+			<div id="n8" style="margin-right: 0;"><img id="u8" src="" alt=""></div>
+		</div>
+
+		<p class="author" style="margin-left: 0; font-size: 10px;">© 2021 Шарко А.Э.</p>
+
+		<div class="win" id="win_good" style="border: 2px solid rgb(60, 255, 0);">
+			<h1>Поздравляю! Вы все выполнили правильно.</h1>
+			<p id="mark_good" style="font-size: 20px; color: #fff;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button id="level4" text="Уровень 4" hover-text="Буквы"
+					onclick="window.location.href = '../html/level_4_books_d.html'"></button>
+			</div>
+		</div>
+
+		<div class="win" id="win_bed" style="border: 2px solid rgb(255, 8, 0);">
+			<h1>Вы проиграли!</h1>
+			<p id="mark_bed" style="font-size: 20px; color: #fff;"></p>
+			<div class="buttons">
+				<button onclick="exit()" style="margin-right: 20px;">Выход</button>
+				<button onclick="window.location.href = 'level_3_figures_d.html'">Ещё раз</button>
+			</div>
+		</div>
+
+		<div class="win" id="win_exit">
+			<h1 id="num_level"></h1>
+			<h1 id="all_ball" style="font-size: 20px; color: #fff;"></h1>
+			<div class="buttons">
+				<button onclick="window.location.href = '../html/miniauthorization_d.html'"
+					style="margin-top: 20px;">Ок</button>
+			</div>
+		</div>
+
+		<script src="../js/level_3_figures.js"></script>
+
+	</div>
+
+</body>
+
+</html>
